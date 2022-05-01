@@ -1,1 +1,1 @@
-# Hackat-n-sobre-tecnolog-as-del-habla
+# Hackathón-sobre-tecnologías-del-habla
