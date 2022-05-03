@@ -1,4 +1,5 @@
 import React,{Component} from 'react';
+import Audio from './components/Audio.js';
 
 export class Formulario extends Component{
     render(){
@@ -20,7 +21,7 @@ export class Formulario extends Component{
             <center><label for = 'Texto'>Texto</label></center>
             <center><textarea cols="50" rows="10" id="Texto" placeholder="Introduce el texto de tu contribución" name="Texto"></textarea> </center>
             <br />
-            <center><input type="submit" /></center>
+            <center><Audio/></center>
 
         </header>
       </div>
