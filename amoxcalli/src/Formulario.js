@@ -2,27 +2,45 @@ import React,{Component} from 'react';
 import Audio from './components/Audio.js';
 
 export class Formulario extends Component{
+
+    constructor(props){
+      super(props)
+
+      this.state={
+        titulo: 'Introduzca aquí el título de su contribución.',
+        fuente : 'Introduzca aquí la fuente de su contribución.',
+        texto: 'Introduzca aquí el texto de su contribución, ya sea como texto o como un audio en la parte inferior.',
+        }
+    }
+
+    changeHandler = (e) => {
+      this.setState({[e.target.name]: e.target.value});
+    }
+
+    submitHandler = (e) => {
+
+    }
+
+
+
     render(){
+        const {titulo, fuente, texto} = this.state;
         return (
       <div className="Formulario">
         <header className="Formulario-header">
-
-          <form action = "" method="post" />
+          <form action = "" method="post" onSubmit={this.submitHandler}>
             <center><label for="Título">Título</label></center>
-            <center><textarea cols="30" rows="5" type="text" id="Título" name="Título" placeholder="Introduce el título de tu contribución" /></center>
+            <center><textarea  cols="33" rows="5" type="text" name="titulo" value={titulo} onChange={this.changeHandler}/></center>
             <br></br>
             <br />
             <center><label for="Fuente">Fuente</label></center>
-            <center><textarea cols="30" rows="5" type="Fuente" id="Fuente" name="Fuente" placeholder="Introduce la fuente" /></center>
-            <br />
-            <center><label for="Subtítulo">Subtítulo</label></center>
-            <center><textarea cols="30" rows="5" type="Subtítulo" id="Subtítulo" name="Subtítuloo" placeholder="Introduce el Subtítulo" /></center>
+            <center><textarea  cols="20" rows="3" type="text" name="fuente" value={fuente} onChange={this.changeHandler}/></center>
             <br />
             <center><label for = 'Texto'>Texto</label></center>
-            <center><textarea cols="50" rows="10" id="Texto" placeholder="Introduce el texto de tu contribución" name="Texto"></textarea> </center>
+            <center><textarea  cols="50" rows="10" type="text" name="texto" value={texto} onChange={this.changeHandler}/></center>
             <br />
             <center><Audio/></center>
-
+          </form>
         </header>
       </div>
       )

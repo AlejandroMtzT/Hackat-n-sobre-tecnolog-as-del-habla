@@ -44,7 +44,7 @@ export class Inicio extends Component{
                 <li><a href="">Biología</a>
                     <ul>
                         <li><a href="">Biologia 1</a></li>
-                        <li><a href="">Bio 2</a></li>
+                        <li><a href="">Biologia 2</a></li>
                     </ul>
                 </li>
                 <li><a href="">Contacto</a></li>

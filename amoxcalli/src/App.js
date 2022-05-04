@@ -1,6 +1,7 @@
 import './App.css';
 import {Inicio} from './Inicio';
 import {Formulario} from './Formulario';
+import {Info} from './Info';
 import {BrowserRouter, Route, Routes, NavLink} from 'react-router-dom';
 
 function App() {
@@ -20,7 +21,12 @@ function App() {
               </li>
               <li className='nav-item- m-1'>
                 <NavLink className="btn btn-light btn-outline-primary" to="/formulario">
-                  Formulario
+                  Crear nueva entrada
+                </NavLink>
+              </li>
+              <li className='nav-item- m-1'>
+                <NavLink className="btn btn-light btn-outline-primary" to="/info">
+                 Información
                 </NavLink>
               </li>
             </ul>
@@ -28,6 +34,7 @@ function App() {
           <Routes>
             <Route path="/inicio"  element={<Inicio/>}/>
             <Route path='/formulario' element={<Formulario/>}/>
+            <Route path='/info' element={<Info/>}/>
           </Routes>
     </div>
     </BrowserRouter>
