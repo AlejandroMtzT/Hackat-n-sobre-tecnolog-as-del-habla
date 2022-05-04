@@ -24,7 +24,7 @@ El presente trabajo es realizado por los siguientes integrantes:
   <li>Oscar Daniel Ortega Morales
   <li>Alexi Uriel Cabrera Mayoral
 </ul>
-No hubiera podido ser realizado sin el apoyo de todos los colaboadores del Hackatón sobre tecnologías del habla.
+No hubiera podido ser realizado sin el apoyo de todos los colaboradores del Hackatón sobre tecnologías del habla.
 
 
 ## License
