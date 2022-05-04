@@ -1,5 +1,6 @@
 import React,{Component} from 'react';
 import Audio from './components/Audio.js';
+import {useState, useEffect} from 'react';
 
 export class Formulario extends Component{
 
