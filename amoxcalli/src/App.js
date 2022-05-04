@@ -3,12 +3,27 @@ import {Inicio} from './Inicio';
 import {Formulario} from './Formulario';
 import {Info} from './Info';
 import {BrowserRouter, Route, Routes, NavLink} from 'react-router-dom';
+import React, {useState, useEffect} from 'react'
 
 function App() {
+
+  const [data, setData] = useState([{}])
+
+  useEffect(() => {
+    fetch("/members").then(
+      res => res.json()
+    ).then(
+      data => {
+        setData(data);
+        console.log(data);
+      }
+    )
+  }, [])
+
   return (
     <BrowserRouter>
     <div className="App">
-      
+
         <h2 className="d-flex justify-content-center m-3">
           Amoxcalli
         </h2>
